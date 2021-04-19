@@ -1,0 +1,17 @@
+name: Build PDF
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: stories-from-the-babblebrook-inn.tex
+      - name: Upload PDF
+        uses: actions/upload-artifact@v2
+        with:
+          name: Stories from the Babblebrook Inn
+          path: build/stories-from-the-babblebrook-inn.pdf
