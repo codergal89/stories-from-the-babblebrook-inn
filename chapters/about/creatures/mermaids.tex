@@ -1,97 +1,102 @@
 \subsection{Mermaids}
 
-Similar to more common Merfolk, mermaids are aquatic humanoids with the lower body of a fish.
+\begin{multicols}{2}
+    Similar to more common Merfolk, mermaids are aquatic humanoids with the lower body of a fish.
 
-\subsubsection{Relation to Merfolk}
-Because of their similarities, new arrivals to Glaefall often confuse them with ordinary Merfolk.
-However, the mermaids of Glaefall are not related to Merfolk in any way.
+    \subsubsection{Relation to Merfolk}
+    Because of their similarities, new arrivals to Glaefall often confuse them with ordinary Merfolk.
+    However, the mermaids of Glaefall are not related to Merfolk in any way.
 
-\subsubsection{Appearance}
-Their slightly translucent skin, showing the deep blue blood flowing in their veins, is usually colored somewhere between turquoise and light blue.
-Their webbed fingers and large fish tails make grant them excellent speed and dexterity in water.
-Contrary to Merfolk however, mermaids can only breathe for a short time on land and must return to water rather quickly.
+    \subsubsection{Appearance}
+    Their slightly translucent skin, showing the deep blue blood flowing in their veins, is usually colored somewhere between turquoise and light blue.
+    Their webbed fingers and large fish tails make grant them excellent speed and dexterity in water.
+    Contrary to Merfolk however, mermaids can only breathe for a short time on land and must return to water rather quickly.
 
-\subsubsection{Living Space}
-Stemming from a place between the Feywild and the Celestial Plane, mermaids have settled in the Glimmerbay.
-They tend to crystals growing withing the caves of the bay, defending them from anyone trying to steal them.
-Known for growing the famed Bubbleweed, a priced ingredient in potions as well as dishes generally only enjoyed by nobility, the mermaid's diet is primarily plant based.
+    \subsubsection{Living Space}
+    Stemming from a place between the Feywild and the Celestial Plane, mermaids have settled in the Glimmerbay.
+    They tend to crystals growing withing the caves of the bay, defending them from anyone trying to steal them.
+    Known for growing the famed Bubbleweed, a priced ingredient in potions as well as dishes generally only enjoyed by nobility, the mermaid's diet is primarily plant based.
 
-\subsubsection{Behavior}
-The Glaefall mermaids live as a single cohesive tribe.
-Abiding by a strong moral code, mermaids generally do not get involved in the matters of others, but protect their kind and settlement fiercely against thieves and intruders.
-Even though they are innately curious about the world around them, they generally do not show themselves to people visiting the bay for the first time.
+    \subsubsection{Behavior}
+    The Glaefall mermaids live as a single cohesive tribe.
+    Abiding by a strong moral code, mermaids generally do not get involved in the matters of others, but protect their kind and settlement fiercely against thieves and intruders.
+    Even though they are innately curious about the world around them, they generally do not show themselves to people visiting the bay for the first time.
 
-\begin{DndMonster}[float, floatplacement=!htb]{Mermaid}
-    \DndMonsterType{Medium fey, lawful neutral}
+\end{multicols}
 
-    \DndMonsterBasics[
-        armor-class = {15},
-        hit-points  = {\DndDice{11d12 + 6}},
-        speed       = {5 ft., swim 40 ft.},
-    ]
+\begin{DndMonster}[float*=h]{Mermaid}
+    \begin{multicols}{2}
+        \DndMonsterType{Medium fey, lawful neutral}
 
-    \DndMonsterAbilityScores[
-        str = 10,
-        dex = 16,
-        con = 14,
-        int = 10,
-        wis = 18,
-        cha = 12,
-    ]
+        \DndMonsterBasics[
+            armor-class = {15},
+            hit-points  = {\DndDice{11d12 + 6}},
+            speed       = {5 ft., swim 40 ft.},
+        ]
 
-    \DndMonsterDetails[
-        skills = {Arcana +6, Athletics +6, Insight +4, Stealth +4},
-        damage-vulnerabilities = {fire},
-        damage-resistances = {cold, poison},
-        senses = {darkvision 90 ft., passive Perception 12},
-        languages = {Speaks Sylvan. Can understand Common and Sylvan. Telepathy 120 ft.},
-        challenge = 3,
-    ]
+        \DndMonsterAbilityScores[
+            str = 10,
+            dex = 16,
+            con = 14,
+            int = 10,
+            wis = 18,
+            cha = 12,
+        ]
 
-    \DndMonsterAction{Innate Spellcasting}
-    A mermaid's spellcasting ability is Wisdom (spell save DC 14, +4 to hit with spell attacks).
-    A mermaid can innately cast the following spells, requiring no material components:
-    \begin{DndMonsterSpells}
-        \DndInnateSpellLevel{druidcraft, minor illusion, charm person, cure wounds}
-        \DndInnateSpellLevel[1]{dominate beast, dominate person}
-        \DndInnateSpellLevel[2]{waterbreathing}
-    \end{DndMonsterSpells}
+        \DndMonsterDetails[
+            skills = {Arcana +6, Athletics +6, Insight +4, Stealth +4},
+            damage-vulnerabilities = {fire},
+            damage-resistances = {cold, poison},
+            senses = {darkvision 90 ft., passive Perception 12},
+            languages = {Speaks Sylvan. Can understand Common and Sylvan. Telepathy 120 ft.},
+            challenge = 3,
+        ]
 
-    \DndMonsterAction{Natural Camouflage}
-    Mermaids naturally adapt to their surroundings and can hide between plants and rock formations.
-    Creatures looking for a mermaid must succeed on a Wisdom (Perception) DC 15 check.
-    If a mermaid is hidden when entering initiative, all creatures must beat a passive Wisdom (Perception) DC 15 check or be surprised.
+        \DndMonsterAction{Innate Spellcasting}
+        A mermaid's spellcasting ability is Wisdom (spell save DC 14, +4 to hit with spell attacks).
+        A mermaid can innately cast the following spells, requiring no material components:
+        \begin{DndMonsterSpells}
+            \DndInnateSpellLevel{druidcraft, minor illusion, charm person, cure wounds}
+            \DndInnateSpellLevel[1]{dominate beast, dominate person}
+            \DndInnateSpellLevel[2]{waterbreathing}
+        \end{DndMonsterSpells}
 
-    \DndMonsterAction{Theater of the Mind}
-    Due to their extra-planar origin, mermaids possess strong powers of illusion, which they use to hide from perceived enemies.
-    A mermaid may employ this power on a creature to show the target its darkest nightmares.
-    This ability may only be used if the mermaid is hidden from the targeted creature.
-    A targeted creature must succeed on a Wisdom saving throw DC 15 or take \DndDice{2d6 + 4} psychic damage.
+        \DndMonsterAction{Natural Camouflage}
+        Mermaids naturally adapt to their surroundings and can hide between plants and rock formations.
+        Creatures looking for a mermaid must succeed on a Wisdom (Perception) DC 15 check.
+        If a mermaid is hidden when entering initiative, all creatures must beat a passive Wisdom (Perception) DC 15 check or be surprised.
 
-    \DndMonsterSection{Actions}
-    \DndMonsterAction{Multiattack}
-    The mermaid makes two Claw attacks.
+        \DndMonsterAction{Theater of the Mind}
+        Due to their extra-planar origin, mermaids possess strong powers of illusion, which they use to hide from perceived enemies.
+        A mermaid may employ this power on a creature to show the target its darkest nightmares.
+        This ability may only be used if the mermaid is hidden from the targeted creature.
+        A targeted creature must succeed on a Wisdom saving throw DC 15 or take \DndDice{2d6 + 4} psychic damage.
 
-    \DndMonsterMelee[
-        name     = {Claw},
-        mod      = {+5},
-        dmg      = {\DndDice{2d8}},
-        dmg-type = {slashing}
-    ]
+        \DndMonsterSection{Actions}
+        \DndMonsterAction{Multiattack}
+        The mermaid makes two Claw attacks.
 
-    \DndMonsterMelee[
-        name     = {Solar Finger Snap},
-        mod      = {+5},
-        dmg      = {\DndDice{3d6 + 3}},
-        dmg-type = {radiant},
-        extra    = {, and the target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded until the start of the mermaid's next turn}
-    ]
+        \DndMonsterMelee[
+            name     = {Claw},
+            mod      = {+5},
+            dmg      = {\DndDice{2d8}},
+            dmg-type = {slashing}
+        ]
 
-    \DndMonsterMelee[
-        name     = {Tail Whip},
-        mod      = {+5},
-        dmg      = {\DndDice{2d10 + 3}},
-        dmg-type = {bludgeoning},
-        extra    = {, and the target must make a DC 15 Dexterity saving throw. On a failed save, the target is pushed 20 ft. away from the mermaid without provoking any reactions}
-    ]
+        \DndMonsterMelee[
+            name     = {Solar Finger Snap},
+            mod      = {+5},
+            dmg      = {\DndDice{3d6 + 3}},
+            dmg-type = {radiant},
+            extra    = {, and the target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded until the start of the mermaid's next turn}
+        ]
+
+        \DndMonsterMelee[
+            name     = {Tail Whip},
+            mod      = {+5},
+            dmg      = {\DndDice{2d10 + 3}},
+            dmg-type = {bludgeoning},
+            extra    = {, and the target must make a DC 15 Dexterity saving throw. On a failed save, the target is pushed 20 ft. away from the mermaid without provoking any reactions}
+        ]
+    \end{multicols}
 \end{DndMonster}
