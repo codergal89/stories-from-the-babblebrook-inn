@@ -2,6 +2,7 @@
 
 \usepackage[english]{babel}
 \usepackage{background}
+\usepackage{import}
 \usepackage{multicol}
 \usepackage[hidelinks]{hyperref}
 
@@ -29,16 +30,20 @@
 
 \part{About This Book}
 
-\input{chapters/about/main-introduction}
-\input{chapters/about/locations-of-glaefall}
-\input{chapters/about/faces-of-glaefall}
-\input{chapters/about/magic-in-glaefall}
+\import{chapters/about/}{main-introduction}
+\import{chapters/about/}{locations-of-glaefall}
+\import{chapters/about/}{faces-of-glaefall}
+\import{chapters/about/}{magic-in-glaefall}
 
 \part{Adventures Around Glaefall}
 
-\input{chapters/adventures/conspiracies}
-\input{chapters/adventures/all-hallows-eve}
-\input{chapters/adventures/the-tower-of-the-lost-mage}
+\import{chapters/adventures/}{conspiracies}
+\import{chapters/adventures/}{all-hallows-eve}
+\import{chapters/adventures/}{the-tower-of-the-lost-mage}
+
+\part{Statblocks}
+
+\import{chapters/statblocks/}{npcs}
 
 \end{document}
  

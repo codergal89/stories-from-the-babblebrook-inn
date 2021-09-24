@@ -1,0 +1,117 @@
+\begin{DndMonster}{Bridget Reede}
+    \begin{multicols}{2}
+        \DndMonsterType{Medium humanoid (human), chaotic good}
+
+        \DndMonsterBasics[
+            armor-class = {10},
+            hit-points  = {\DndDice{6d8 + 2}},
+            speed       = {30 ft.},
+        ]
+
+        \DndMonsterAbilityScores[
+            str = 11,
+            dex = 11,
+            con = 15,
+            int = 15,
+            wis = 9,
+            cha = 15,
+        ]
+
+        \DndMonsterDetails[
+            saving-throws = {CHA +4, CON +4},
+            skills = {History +4, Insight +1, Nature +4, Persuasion +4},
+            senses = {passive Perception 9},
+            languages = {Common, Dwarvish, Hafling},
+            challenge = 1
+        ]
+
+        \DndMonsterAction{Spellcasting}
+        Bridget is a 1st-level spellcaster.
+        Her spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks).
+        Bridget has the following spells prepared:
+        \begin{DndMonsterSpells}
+            \DndMonsterSpellLevel{druidcraft, prestidigitation, thaumaturgy}
+        \end{DndMonsterSpells}
+
+        \DndMonsterAction{Steadfast}
+        Bridget can't be frightened while she can see an allied creature withing 30 feet of her.
+
+        \DndMonsterSection{Actions}
+
+        \DndMonsterAttack[
+            name=Dagger,
+            distance=both,
+            mod=+2,
+            range=20/60,
+            dmg=\DndDice{1d4},
+            dmg-type=piercing,
+        ]
+
+        \DndMonsterRanged[
+            name=Sling,
+            mod=+2,
+            range=30/120,
+            dmg=\DndDice{1d4},
+            dmg-type=bludgeoning
+        ]
+
+        \DndMonsterMelee[
+            name=Unarmed Strike,
+            mod=+2,
+            dmg=1,
+            dmg-type=bludgeoning
+        ]
+
+        \DndMonsterAction{Healer's Kit}
+        This kit is a leather pouch containing bandages, salves, and splints.
+        The kit has ten uses.
+        As an action, Bridget can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.
+
+        \DndMonsterAction{Potion of Healing}
+        The potion's red liquid glimmers when agitated.
+        As a bonus action, Bridget can either consume the potion herself, or administer it to a creature within 5 feet of her.
+        The consuming creature regains \DndDice{2d4 + 2} hit points.
+
+        \DndMonsterSection{Inventory}
+
+        \DndMonsterAction{Brewer's Supplies}
+        These special tools include the items needed to pursue a craft or trade in brewing.
+
+        \DndMonsterAction{Cloak of Protection}
+        \textit{Wondrous item, (attuned)}
+        Bridget gains a +1 bonus to her AC and saving throws when wearing this cloak.
+
+        \DndMonsterAction{Common Clothes}
+        A slightly off-white, puffy blouse over which Bridget wears a forest green west made from a thick cotton weave.
+        A forest green skirt reaching almost to the ground under which a pair of cloth boots with leather soles can be seen.
+
+        \DndMonsterAction{Cook's Utensils}
+        These special tools include the items needed to pursue a craft or trade in cookery.
+
+        \DndMonsterAction{Disguise Kit}
+        This pouch of cosmetics, hair dye, and small props lets Bridget create disguises that change a creature's physical appearance.
+
+        \DndMonsterAction{Gaming Set of Playing Cards}
+        A set of cards Bridget uses to play Three Dragon Ante with guests and friends.
+
+        \DndMonsterAction{Herbalism Kit}
+        This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions.
+
+        \DndMonsterAction{Glass Bottle}
+        A bottle holding 1½ pints of liquid.
+
+        \DndMonsterAction{Pouch}
+        A small leather pouch in which Bridget keeps her sling bullets and assorted bips and bops she finds on her way through the woods.
+
+        \DndMonsterAction{Ring of Protection}
+        \textit{Ring, rare (attuned)}
+        Bridget gains a +1 bonus to her AC and saving throws when wearing this ring.
+
+        \DndMonsterAction{Sling Bullet (20)}
+        A small stone which can be flung at high velocity using Bridget's sling.
+
+        \DndMonsterAction{Tinderbox}
+        This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire.
+
+    \end{multicols}
+\end{DndMonster}

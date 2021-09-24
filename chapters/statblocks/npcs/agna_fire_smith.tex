@@ -1,0 +1,99 @@
+\begin{DndMonster}{Agna Fire Smith}
+    \begin{multicols}{2}
+        \DndMonsterType{Medium humanoid (half-orc), lawful neutral}
+
+        \DndMonsterBasics[
+            armor-class = {16 (chain mail)},
+            hit-points  = {\DndDice{16d8 + 32}},
+            speed       = {30 ft.},
+        ]
+
+        \DndMonsterAbilityScores[
+            str = 19,
+            dex = 13,
+            con = 16,
+            int = 11,
+            wis = 14,
+            cha = 16,
+        ]
+
+        \DndMonsterDetails[
+            saving-throws = {CHA +7, CON +7, STR +8},
+            skills = {Athletics +12, Intimidation +7, Religion +4, Survival +6},
+            damage-resistances = {bludgeoning, poison},
+            senses = {darkvision 60 ft., passive Perception 12},
+            languages = {Common, Orc},
+            challenge = 9
+        ]
+
+        \DndMonsterAction{Brute}
+        A melee weapon deals one extra die of its damage when Agna hits with it (included in the attack).
+
+        \DndMonsterAction{Pushback}
+        Whenever Agna hits a creature with an unarmed strike, the target is pushed back 5 feet.
+        If the creature can not move back because it is blocked by a solid object like a wall, it takes an additional \DndDice{1d4} bludgeoning damage.
+        The target must succeed on a DC 17 Strength saving throw or be knocked prone.
+
+        \DndMonsterAction{Relentless Endurance (1/day)}
+        When Agna is reduced to 0 hit points but not killed outright, she can drop to 1 hit point instead.
+        She can’t use this feature again until the next dawn.
+
+        \DndMonsterSection{Actions}
+
+        \DndMonsterAction{Multiattack}
+        Agna makes two attacks in one action. She can use any of her attacks twice.
+
+        \DndMonsterMelee[
+            name=Maul +2,
+            mod=+10,
+            dmg=\DndDice{2d6 + 6},
+            dmg-type=bludgeoning,
+        ]
+        A maul, Agna worked on for many years in order to perfect its weight and balance.
+
+        \DndMonsterMelee[
+            name=Warhammer,
+            mod=+8,
+            dmg=\DndDice{1d8 + 4},
+            dmg-type=bludgeoning,
+            or-dmg={1d10 + 4},
+            or-dmg-when={if used with two hands.}
+        ]
+
+        \DndMonsterMelee[
+            name=Unarmed Strike,
+            mod=+8,
+            dmg=5,
+            dmg-type=bludgeoning
+        ]
+
+        \DndMonsterSection{Reactions}
+
+        \DndMonsterAction{Parry}
+        Agna adds 2 to her AC against one melee attack that would hit her.
+        To do so, she must see the attacker and be wielding a melee weapon.
+
+        \DndMonsterSection{Inventory}
+
+        \DndMonsterAction{Chain Mail}
+        A set of chain mail armor, crafted by Agna herself.
+        She often wears it to protect herself when working with especially dangerous tools.
+
+        \DndMonsterAction{Common Clothes}
+        Heavy leather clothes with burn and cut marks all over them.
+        She spends a lot of time to take care of it, applying oils and repairing tears.
+
+        \DndMonsterAction{Gaming Set of Playing Cards}
+        A set of Orcish playing cards.
+        Agna often visits Brookton's taverns, enjoying a good and fair game of cards along with the occasional ale or two.
+
+        \DndMonsterAction{Smith's Tools}
+        The tools of her trade.
+        She carries them around almost all the time, using them to repair what ever is broken while enjoying her time off in the town.
+
+        \DndMonsterAction{Pan Flute}
+        Agna uses this set of panpipes during her meditation rituals.
+        Due to her having picked them up only recently, the sounds she produces from them are not as pleasing as one might hope.
+
+    \end{multicols}
+\end{DndMonster}
