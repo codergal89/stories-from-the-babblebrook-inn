@@ -1,0 +1,78 @@
+\begin{DndMonster}{Clop}
+    \begin{multicols}{2}
+        \DndMonsterType{Huge plant (treant), chaotic good}
+
+        \DndMonsterBasics[
+            armor-class = {16 (natural armor)},
+            hit-points  = {\DndDice{18d12 + 60}},
+            speed       = {30 ft.},
+        ]
+
+        \DndMonsterAbilityScores[
+            str = 23,
+            dex = 8,
+            con = 21,
+            int = 12,
+            wis = 18,
+            cha = 14,
+        ]
+
+        \DndMonsterDetails[
+            skills = {Animal Handling +8, History +9, Nature +9, Stealth +3},
+            damage-vulnerabilities = {fire},
+            damage-resistances = {bludgeoning, piercing},
+            senses = {passive Perception 14},
+            languages = {Common, Druidic, Elvish, Sylvan},
+            challenge = 9
+        ]
+
+        \DndMonsterAction{False Appearance}
+        While Clop remains motionless, they are indistinguishable from a normal tree.
+
+        \DndMonsterAction{Siege Monster}
+        Clop deals double damage to objects and structures.
+
+        \DndMonsterSection{Actions}
+
+        \DndMonsterAction{Multiattack}
+        Clop make two slam attacks.
+
+        \DndMonsterRanged[
+            name=Treant-Rock,
+            mod=+10,
+            range=60/180,
+            dmg=\DndDice{4d10 + 6},
+            dmg-type=bludgeoning
+        ]
+
+        \DndMonsterMelee[
+            name=Slam,
+            mod=+10,
+            dmg=\DndDice{3d6 + 6},
+            dmg-type=bludgeoning
+        ]
+
+        % \DndMonsterSection{Inventory}
+
+        % \DndMonsterAction{Leaf of Heroism}
+        % \textit{A golden shimmering leaf}
+
+        % A leaf off of Clop's crown.
+        % It is imbued with the \textit{heroism} spell.
+        % If the spell is of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully.
+        % The DC is 11.
+        % On a failed check, the spell disappears from the leaf with no other effect.
+        % Once the spell is cast, the leaf fades into nothingness.
+
+        % \DndMonsterAction{Leaf of Speak with Plants}
+        % \textit{A silver shimmering leaf}
+
+        % A leaf off of Clop's crown.
+        % It is imbued with the \textit{speak with plants} spell.
+        % If the spell is of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully.
+        % The DC is 11.
+        % On a failed check, the spell disappears from the leaf with no other effect.
+        % Once the spell is cast, the leaf fades into nothingness.
+
+    \end{multicols}
+\end{DndMonster}
