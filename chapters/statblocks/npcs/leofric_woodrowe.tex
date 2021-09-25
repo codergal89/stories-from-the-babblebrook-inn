@@ -1,0 +1,83 @@
+\begin{DndMonster}{Leofric Woodrowe}
+    \begin{multicols}{2}
+        \DndMonsterType{Small humanoid (forest gnome), neutral good}
+
+        \DndMonsterBasics[
+            armor-class = {10 (+1 when wearing \textit{Ring of Protection}, +1 when wearing \textit{Cloak of Protection})},
+            hit-points  = {\DndDice{11d8 + 28}},
+            speed       = {25 ft.},
+        ]
+
+        \DndMonsterAbilityScores[
+            str = 9,
+            dex = 16,
+            con = 11,
+            int = 12,
+            wis = 18,
+            cha = 11,
+        ]
+
+        \DndMonsterDetails[
+            saving-throws = {Dex +6, Wis +7},
+            skills = {History +7, Medicine +5, Religion +4},
+            senses = {darkvision 60ft., passive Perception 14},
+            languages = {Common, Dwarvish, Gnomish, Sylvan},
+            challenge = 8
+        ]
+
+        \DndMonsterAction{Gnome Cunning}
+        Leofric has advantage on Intelligence, Wisdom, and Charisma saving throws against magic.
+
+        \DndMonsterAction{Nimble Escape}
+        Leofric can take the Disengage or Hide action as a bonus action on each of his turns.
+
+        \DndMonsterAction{Reactive}
+        Leofric can take one reaction on every turn in combat.
+
+        \DndMonsterAction{Sense Magic}
+        Leofric senses magic within 120 feet of him at will.
+        This trait otherwise works like the \textit{detect magic} spell but isn't itself magical.
+
+        \DndMonsterAction{Spellcasting}
+        Leofric is an 8th-level spellcaster.
+        His spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks).
+        Leofric has the following spells prepared:
+        \begin{DndMonsterSpells}
+            \DndMonsterSpellLevel{dancing lights, fire bolt, light, mage hand}
+            \DndMonsterSpellLevel[1][4]{alarm, betterberry, identify, shield, unseen servant}
+            \DndMonsterSpellLevel[2][3]{shatter}
+            \DndMonsterSpellLevel[3][3]{animate dead, public announcement, revivify}
+            \DndMonsterSpellLevel[4][2]{leofric's field of force}
+        \end{DndMonsterSpells}
+
+        \DndMonsterSection{Actions}
+
+        \DndMonsterAction{Multiattack}
+        Leofric makes three attacks in one action.
+        Two with his dagger and one with his quarterstaff.
+
+        \DndMonsterMelee[
+            name=Dagger +2,
+            mod=+8,
+            reach=20/60,
+            dmg=\DndDice{1d4 + 5},
+            dmg-type=piercing
+        ]
+
+        \DndMonsterMelee[
+            name=Quarterstaff,
+            mod=+4,
+            reach=5,
+            dmg=\DndDice{1d6 + 1},
+            dmg-type=bludgeoning
+        ]
+
+        \DndMonsterMelee[
+            name=Unarmed Strike,
+            mod=+2,
+            reach=5,
+            dmg=1,
+            dmg-type=bludgeoning
+        ]
+    \end{multicols}
+\end{DndMonster}
